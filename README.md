@@ -1,3 +1,8 @@
-This is an effort to bring better Vim support for Mozilla projects and to make it easier to use by web developers.
+This is an effort to bring better Vim syntax files for Mozilla contributors and web developers.
 
-At the moment, there’s only a C++ syntax file including Mozilla platform components and macros. Syntax files for HTML 5, CSS 3, JavaScript 1.8 will follow. Contributions are welcome!
+* html.vim: TBD
+* css.vim: extended CSS syntax file with partial CSS3 and HTML5 support
+* javascript.vim: TBD
+* cpp.vim: extended C++ syntax file including Mozilla platform components and macros
+
+Contributions are welcome.
