@@ -28,3 +28,9 @@ fatBoySlim : ils le seront tôt ou tard, autant leur apprendre le plus tôt pos
 OldTimer : n3rd: oui, il faut qu'ils aient du temps pour « s'ennuyer », et donc trouver un moyen de s'occuper seuls
 OldTimer : C'est pas moi qui le dis, j'ai lu ça qq part
 n3rd : fatBoySlim: on peut aussi leur casser les jambes. Tôt ou tard s'ils vieillissent ils auront des problèmes d'arthrose alors autant apprendre à les gérer le plus tôt possible.
+
+12 septembre 2012
+n3rd : moi j'ai trouvé l'astuce: quand mon site est tombé en panne, je l'ai réparé 2 mois après
+FuckDuckGo : moi j’ai attendu que les gens passent à un navigateur qui supportait mon site
+n3rd: et plus personne me demande quoi que soit
+n3rd : pour plus de sécurité, j'ai désactivé le smtp, comme ça, même si y'en a qui veulent utiliser le formulaire de contact, je suis pas dérangé.
