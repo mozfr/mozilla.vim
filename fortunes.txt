@@ -34,3 +34,15 @@ n3rd : moi j'ai trouvé l'astuce: quand mon site est tombé en panne, je l'ai r�
 FuckDuckGo : moi j’ai attendu que les gens passent à un navigateur qui supportait mon site
 n3rd: et plus personne me demande quoi que soit
 n3rd : pour plus de sécurité, j'ai désactivé le smtp, comme ça, même si y'en a qui veulent utiliser le formulaire de contact, je suis pas dérangé.
+
+4 octobre 2012
+Smarty: goofy: il manque un champ alt à ton image :)
+goofy : un *champ* alt ? c'était pas un attribut quand j'étais jeune ?
+fuckDuckGo : goofy: attribut
+fuckDuckGo : goofy: n’écoute pas les feignasses de fonctionnaires LaTeXophiles, c’est un coup à se retrouver dans une situation pénible
+SysDaemon : Si jamais Smarty sort les siens d'attributs, ça va moins fanfaronner sur ce chan.
+fuckDuckGo : alors là
+fuckDuckGo : nous, au bureau Mozilla d’Aboukir, on a des COQUETIERS
+oldTimer : :D
+fuckDuckGo : commandés tout exprès pour qu’on puisse mettre nos testicules dedans, pour ne pas salir la table
+fuckDuckGo : autant dire, on ne craint personne
