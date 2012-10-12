@@ -3,8 +3,6 @@
 " Maintainer:  Fabien Cazenave (:kaze)
 " Last Change: 2012-04-03
 
-" Put this file in ~/.vim/after/syntax/
-
 " kaze's extensions
 syn match cppOperator        "&"
 syn match cppOperator        "*"

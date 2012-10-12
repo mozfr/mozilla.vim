@@ -4,8 +4,6 @@
 " Contributor: Fabien Cazenave
 " Last Change: 2012-04-07
 
-" Put this file in ~/.vim/after/syntax/
-
 " HTML 5 tag names
 syn keyword htmlTagName contained article aside audio canvas command datalist
 syn keyword htmlTagName contained details figcaption figure footer header
