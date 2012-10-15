@@ -1,34 +1,28 @@
 " Vim syntax file
-" Language:    C++
+" Language:    C++ (Gecko)
 " Maintainer:  Fabien Cazenave (:kaze)
-" Last Change: 2012-04-03
+" Last Change: 2012-10-15
+" Extends:     /usr/share/vim/vimcurrent/syntax/cpp.vim
 
-" kaze's extensions
-syn match cppOperator        "&"
-syn match cppOperator        "*"
-syn match cppOperator        "::"
-syn match cppOperator        "->"
-
-" Mozilla Types and Constants
+"|
+"| Gecko Types and Constants
+"|----------------------------------------------------------------------------
+"|
 syn keyword moz_type         PRBool PRSize PROffset32 PROffset64 PRUptrdiff PRUnichar PRPackedBool
 syn keyword moz_type         PRInt8 PRInt16 PRInt32 PRInt64 PRUint8 PRUint16 PRUint32 PRUint64
 syn keyword moz_boolean      PR_TRUE PR_FALSE
 syn keyword moz_constant     nsnull NS_OK NS_HTML_TAG_MAX
 syn keyword moz_type_ns      nsAString nsCOMPtr nsCOMArray nsRefPtr nsWeakPtr nsresult nsTArray
-"syn keyword moz_type_ns      nsAutoEditBatch nsAutoEditInitRulesTrigger nsAutoInsertContainerSelNotify
-"syn keyword moz_type_ns      nsAutoLockListener nsAutoLockRulesSniffing nsAutoLockRulesSniffing
-"syn keyword moz_type_ns      nsAutoMoveNodeSelNotify nsAutoPlaceHolderBatch nsAutoPtr
-"syn keyword moz_type_ns      nsAutoRemoveContainerSelNotify nsAutoReplaceContainerSelNotify nsAutoRules
-"syn keyword moz_type_ns      nsAutoScriptBlockerSuppressNodeRemoved nsAutoSelectionReset nsAutoString
-"syn keyword moz_type_ns      nsAutoTArray nsAutoTrackDOMPoint nsAutoTxnsConserveSelection
-"syn keyword moz_type_ns      nsAutoUpdateViewBatch
 syn keyword moz_type_ns      nsAutoPtr nsAutoString nsAutoTArray
 syn keyword moz_type_ns      NS_IMETHOD NS_IMETHODIMP
 
-" # Mozilla Components
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^\(class\|interface\)\s*nsI" '{}' \;
-"   | sed 's/\(:\|;\|,\|{\).*$//' | sed 's/^.*nsI/nsI/' | sed 's/\s*$//'                 \
-"   | sort -u | grep nsIDOM -v
+"|
+"| Gecko Components
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^\(class\|interface\)\s*nsI" '{}' \;
+"|   | sed 's/\(:\|;\|,\|{\).*$//' | sed 's/^.*nsI/nsI/' | sed 's/\s*$//'                 \
+"|   | sort -u | grep nsIDOM -v
+"|
   syn keyword moz_component  nsIAboutModule nsIAbsorbingTransaction nsIAccessibilityService nsIAccessible
   syn keyword moz_component  nsIAccessibleApplication nsIAccessibleCaretMoveEvent nsIAccessibleCoordinateType
   syn keyword moz_component  nsIAccessibleDocument nsIAccessibleEditableText nsIAccessibleEvent
@@ -373,10 +367,13 @@ syn keyword moz_type_ns      NS_IMETHOD NS_IMETHODIMP
   syn keyword moz_component  nsIXULTreeBuilder nsIXULTreeBuilderObserver nsIXULWindow nsIZipEntry
   syn keyword moz_component  nsIZipReader nsIZipReaderCache nsIZipWriter
 
-" # Mozilla Components: External DOM API
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^\(class\|interface\)\s*nsI" '{}' \;
-"   | sed 's/\(:\|;\|,\|{\).*$//' | sed 's/^.*nsI/nsI/' | sed 's/\s*$//'                 \
-"   | sort -u | grep nsIDOM
+"|
+"| Gecko Components: External DOM API
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^\(class\|interface\)\s*nsI" '{}' \;
+"|   | sed 's/\(:\|;\|,\|{\).*$//' | sed 's/^.*nsI/nsI/' | sed 's/\s*$//'                 \
+"|   | sort -u | grep nsIDOM
+"|
   syn keyword moz_dom        nsIDOMAnimationEvent nsIDOMAttr nsIDOMBarProp nsIDOMBeforeUnloadEvent nsIDOMBlob
   syn keyword moz_dom        nsIDOMCanvasGradient nsIDOMCanvasPattern nsIDOMCanvasRenderingContext2D
   syn keyword moz_dom        nsIDOMCDATASection nsIDOMCharacterData nsIDOMChromeWindow nsIDOMCIExtension
@@ -513,7 +510,10 @@ syn keyword moz_type_ns      NS_IMETHOD NS_IMETHODIMP
   syn keyword moz_dom        nsIDOMXULPopupElement nsIDOMXULRelatedElement nsIDOMXULSelectControlElement
   syn keyword moz_dom        nsIDOMXULSelectControlItemElement nsIDOMXULTextBoxElement nsIDOMXULTreeElement
 
-" Mozilla Helpers
+"|
+"| Gecko Helpers
+"|----------------------------------------------------------------------------
+"|
 syn keyword moz_util         do_CreateInstance do_GetAtom do_GetService do_GetWeakReference do_QueryInterface do_QueryReferent
 syn keyword moz_util         getter_AddRefs address_of
 syn keyword moz_assert       NS_ASSERTION NS_ENSURE_SUCCESS NS_ENSURE_TRUE NS_ENSURE_STATE NS_ENSURE_ARG_POINTER
@@ -522,18 +522,24 @@ syn keyword moz_util         NS_NewAtom NS_NewRunnableMethod NS_NewISupportsArra
 syn keyword moz_util         NS_LITERAL_STRING NS_NAMED_LITERAL_STRING NS_ADDREF NS_MIN NS_ABS
 syn keyword moz_util         NS_EDITOR_ELEMENT_NOT_FOUND NS_DEFINE_CID
 
-" # Mozilla NS_ERROR Macros
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_ERROR" '{}' \; \
-"   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' | sed 's/(.*$//'           \
-"   | sort -u
+"|
+"| Gecko NS_ERROR Macros
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_ERROR" '{}' \; \
+"|   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' | sed 's/(.*$//'           \
+"|   | sort -u
+"|
   syn keyword moz_util       NS_ERROR
   syn keyword moz_util       NS_ERROR_GENERATE NS_ERROR_GENERATE_FAILURE NS_ERROR_GENERATE_SUCCESS
   syn keyword moz_util       NS_ERROR_GET_CODE NS_ERROR_GET_MODULE NS_ERROR_GET_SEVERITY
 
-" # Mozilla NS_ERROR Constants
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_ERROR" '{}' \; \
-"   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' -v                         \
-"   | sort -u
+"|
+"| Gecko NS_ERROR Constants
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_ERROR" '{}' \; \
+"|   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' -v                         \
+"|   | sort -u
+"|
   syn keyword moz_error      NS_ERROR_ABORT NS_ERROR_ALREADY_CONNECTED NS_ERROR_ALREADY_INITIALIZED
   syn keyword moz_error      NS_ERROR_ALREADY_OPENED NS_ERROR_BASE NS_ERROR_CACHE_DATA_IS_NOT_STREAM
   syn keyword moz_error      NS_ERROR_CACHE_DATA_IS_STREAM NS_ERROR_CACHE_ENTRY_DOOMED NS_ERROR_CACHE_IN_USE
@@ -705,10 +711,13 @@ syn keyword moz_util         NS_EDITOR_ELEMENT_NOT_FOUND NS_DEFINE_CID
   syn keyword moz_error      NS_ERROR_XSLT_NODESET_EXPECTED NS_ERROR_XSLT_PARSE_FAILURE
   syn keyword moz_error      NS_ERROR_XSLT_VAR_ALREADY_SET NS_ERROR_XSLT_WRONG_MIME_TYPE
 
-" # Mozilla NS_IMPL Macros
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_IMPL" '{}' \;  \
-"   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' | sed 's/(.*$//'           \
-"   | sort -u
+"|
+"| Gecko NS_IMPL Macros
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_IMPL" '{}' \;  \
+"|   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' | sed 's/(.*$//'           \
+"|   | sort -u
+"|
   syn keyword moz_util       NS_IMPL_ACTION_ATTR NS_IMPL_ADDREF NS_IMPL_ADDREF_INHERITED
   syn keyword moz_util       NS_IMPL_ADDREF_USING_AGGREGATOR NS_IMPL_AGGREGATED NS_IMPL_AGGREGATED_HELPER
   syn keyword moz_util       NS_IMPL_AGGREGATED_QUERY_CYCLE_COLLECTION NS_IMPL_AGGREGATED_QUERY_HEAD
@@ -815,10 +824,13 @@ syn keyword moz_util         NS_EDITOR_ELEMENT_NOT_FOUND NS_DEFINE_CID
   syn keyword moz_util       NS_IMPL_UINT_ATTR_NON_ZERO NS_IMPL_UINT_ATTR_NON_ZERO_DEFAULT_VALUE
   syn keyword moz_util       NS_IMPL_URI_ATTR NS_IMPL_URI_ATTR_WITH_BASE NS_IMPL_ZEROING_OPERATOR_NEW
 
-" # Mozilla NS_IMPL Constants
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_IMPL" '{}' \;  \
-"   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' -v                         \
-"   | sort -u
+"|
+"| Gecko NS_IMPL Constants
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_IMPL" '{}' \;  \
+"|   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' -v                         \
+"|   | sort -u
+"|
   syn keyword moz_impl       NS_IMPLEMENT_FULLVISITRESULT NS_IMPLEMENT_SIMPLE_RESULTNODE
   syn keyword moz_impl       NS_IMPLEMENT_SIMPLE_RESULTNODE_NO_GETITEMMID NS_IMPLEMENT_VISITRESULT
   syn keyword moz_impl       NS_IMPL_CYCLE_COLLECTION_TRACE_END
@@ -837,10 +849,13 @@ syn keyword moz_util         NS_EDITOR_ELEMENT_NOT_FOUND NS_DEFINE_CID
   syn keyword moz_impl       NS_IMPL_THREADSAFE_QUERY_INTERFACE6 NS_IMPL_THREADSAFE_QUERY_INTERFACE7
   syn keyword moz_impl       NS_IMPL_THREADSAFE_QUERY_INTERFACE8 NS_IMPL_THREADSAFE_QUERY_INTERFACE9
 
-" # Mozilla NS_INTERFACE Macros
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_INTERFACE" '{}' \;  \
-"   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' | sed 's/(.*$//'                \
-"   | sort -u
+"|
+"| Gecko NS_INTERFACE Macros
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_INTERFACE" '{}' \;  \
+"|   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' | sed 's/(.*$//'                \
+"|   | sort -u
+"|
   syn keyword moz_util       NS_INTERFACE_MAP_BEGIN NS_INTERFACE_MAP_BEGIN_AGGREGATED
   syn keyword moz_util       NS_INTERFACE_MAP_BEGIN_CYCLE_COLLECTION
   syn keyword moz_util       NS_INTERFACE_MAP_BEGIN_CYCLE_COLLECTION_INHERITED
@@ -868,16 +883,22 @@ syn keyword moz_util         NS_EDITOR_ELEMENT_NOT_FOUND NS_DEFINE_CID
   syn keyword moz_util       NS_INTERFACE_TABLE_TAIL_INHERITING NS_INTERFACE_TABLE_TAIL_USING_AGGREGATOR
   syn keyword moz_util       NS_INTERFACE_TABLE_TO_MAP_SEGUE_CYCLE_COLLECTION
 
-" # Mozilla NS_INTERFACE Constants
-" find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_INTERFACE" '{}' \;  \
-"   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' -v                              \
-"   | sort -u
+"|
+"| Gecko NS_INTERFACE Constants
+"|----------------------------------------------------------------------------
+"| find src/mozilla -regex ".*\.\(idl\|h\)" -exec grep "^#define\s*NS_INTERFACE" '{}' \;  \
+"|   | sed 's/^#define\s*//' | sed 's/\s.*$//' | grep '(' -v                              \
+"|   | sort -u
+"|
   syn keyword moz_interface  NS_INTERFACEINFOMANAGER_SERVICE_CID NS_INTERFACEINFOMANAGER_SERVICE_CLASSNAME
   syn keyword moz_interface  NS_INTERFACEINFOMANAGER_SERVICE_CONTRACTID NS_INTERFACE_MAP_END
   syn keyword moz_interface  NS_INTERFACE_MAP_END_THREADSAFE NS_INTERFACE_TABLE_BEGIN NS_INTERFACE_TABLE_END
   syn keyword moz_interface  NS_INTERFACE_TABLE_TAIL NS_INTERFACE_TABLE_TO_MAP_SEGUE
 
-" Mozilla highlight rules
+"|
+"| Gecko Highlight Rules
+"|----------------------------------------------------------------------------
+"|
 hi def link moz_type         Type
 hi def link moz_type_ns      Type
 hi def link moz_component    Type

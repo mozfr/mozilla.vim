@@ -4,6 +4,7 @@
 " Contributor: Fabien Cazenave
 " Last Change: 2012-10-15
 " Extends:     /usr/share/vim/vimcurrent/syntax/css.vim
+"              http://www.fleiner.com/vim/syntax/css.vim
 
 " HTML 5 tag names
 syn keyword cssTagName article aside audio canvas command datalist
