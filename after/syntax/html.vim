@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:    HTML5
-" Maintainer:  Arno Renevier
+" Contributor: Arno Renevier
 " Contributor: Fabien Cazenave
 " Last Change: 2012-10-15
 " Extends:     /usr/share/vim/vimcurrent/syntax/html.vim
@@ -21,7 +21,7 @@ syn clear htmlArg
 syn keyword htmlArg contained abbr accesskey action align alt archive axis
 syn keyword htmlArg contained border cellpadding cellspacing char charoff
 syn keyword htmlArg contained charset checked cite class classid codebase
-syn keyword htmlArg contained codetype cols colspan content coords data datetime
+syn keyword htmlArg contained codetype cols colspan content coords datetime
 syn keyword htmlArg contained declare defer dir disabled enctype for frame
 syn keyword htmlArg contained frameborder headers height href hreflang id ismap
 syn keyword htmlArg contained label lang longdesc marginheight marginwidth
@@ -31,9 +31,9 @@ syn keyword htmlArg contained rules scheme scope scrolling selected shape size
 syn keyword htmlArg contained span src standby style summary tabindex target
 syn keyword htmlArg contained title type usemap valign value valuetype width
 syn match   htmlArg contained "<\accept-charset\|accept\>"
-syn match   htmlArg contained "<\http-equiv\>"
+syn match   htmlArg contained "\<\(http-equiv\|href\|title\)="me=e-1
 
-" HTML4 Attributes -- events
+" HTML4 Attributes -- event handling
 syn keyword htmlArg contained onblur onchange onclick ondblclick onfocus
 syn keyword htmlArg contained onkeydown onkeypress onkeyup onload onmousedown
 syn keyword htmlArg contained onmousemove onmouseout onmouseover onmouseup
@@ -62,7 +62,9 @@ syn keyword htmlArg contained placeholder poster preload radiogroup required
 syn keyword htmlArg contained reversed reversed sandbox scoped seamless sizes
 syn keyword htmlArg contained spellcheck srcdoc srclang step translate
 syn keyword htmlArg contained typemustmatch wrap
-syn match   htmlArg contained "\<data-[a-z][a-z\-0-9]*\>"
+
+" Note: `data' is an HTML4 attribute, `data-*' is an HTML5 attribute collection
+syn match   htmlArg contained "\<\(data-[a-z][a-z\-0-9]*\|data\)\>"
 
 
 "|
