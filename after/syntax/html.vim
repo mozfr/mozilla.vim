@@ -6,59 +6,80 @@
 " Extends:     /usr/share/vim/vimcurrent/syntax/html.vim
 "              http://www.fleiner.com/vim/syntax/html.vim
 
-" HTML 5 Tag Names
-syn keyword htmlTagName contained article aside audio canvas command datalist
-syn keyword htmlTagName contained details figcaption figure footer header
-syn keyword htmlTagName contained hgroup keygen mark meter nav output progress
-syn keyword htmlTagName contained rp rt ruby section source summary time track
-syn keyword htmlTagName contained video wbr
 
-"|
-"| HTML Attribute Names
-"|----------------------------------------------------------------------------
-"|
-
-" we have to reset htmlArg in order to support data-* properly
+" we have to reset `htmlArg' in order to support data-* properly
 syn clear htmlArg
 
-" HTML 3 Attributes
-syn keyword htmlArg contained action align alink alt archive background bgcolor
-syn keyword htmlArg contained border bordercolor cellpadding cellspacing checked
-syn keyword htmlArg contained class clear code codebase color cols colspan
-syn keyword htmlArg contained content coords enctype face gutter height hspace
-syn keyword htmlArg contained id link lowsrc marginheight marginwidth maxlength
-syn keyword htmlArg contained method name prompt rel rev rows rowspan scrolling
-syn keyword htmlArg contained selected shape size src start target text type url
-syn keyword htmlArg contained usemap ismap valign value vlink vspace width wrap
-syn match   htmlArg contained "\<\(http-equiv\|href\|title\)="me=e-1
 
-" HTML 4 Attributes
-syn match   htmlArg contained "\<\(accept-charset\|label\)\>"
-syn keyword htmlArg contained abbr accept accesskey axis char charoff charset
-syn keyword htmlArg contained cite classid codetype compact datetime declare
-syn keyword htmlArg contained defer dir disabled for frame frameborder noresize
-syn keyword htmlArg contained pagex pagey above below headers hreflang lang
-syn keyword htmlArg contained language longdesc left top visibility clip id
-syn keyword htmlArg contained noshade multiple nohref nowrap object profile
-syn keyword htmlArg contained readonly rules scheme scope span standby style
-syn keyword htmlArg contained summary tabindex valuetype version
-syn match   htmlArg contained "\<z-index\>"
+"|
+"| HTML4 Attributes
+"|------------------------------------------------------------------------------
+"| http://www.w3.org/TR/html4/index/attributes
+"|
 
-" HTML 5 Attributes
+" HTML4 Attributes
+syn keyword htmlArg contained abbr accesskey action align alt archive axis
+syn keyword htmlArg contained border cellpadding cellspacing char charoff
+syn keyword htmlArg contained charset checked cite class classid codebase
+syn keyword htmlArg contained codetype cols colspan content coords data datetime
+syn keyword htmlArg contained declare defer dir disabled enctype for frame
+syn keyword htmlArg contained frameborder headers height href hreflang id ismap
+syn keyword htmlArg contained label lang longdesc marginheight marginwidth
+syn keyword htmlArg contained maxlength media method multiple name nohref
+syn keyword htmlArg contained noresize profile readonly rel rev rows rowspan
+syn keyword htmlArg contained rules scheme scope scrolling selected shape size
+syn keyword htmlArg contained span src standby style summary tabindex target
+syn keyword htmlArg contained title type usemap valign value valuetype width
+syn match   htmlArg contained "<\accept-charset\|accept\>"
+syn match   htmlArg contained "<\http-equiv\>"
+
+" HTML4 Attributes -- events
+syn keyword htmlArg contained onblur onchange onclick ondblclick onfocus
+syn keyword htmlArg contained onkeydown onkeypress onkeyup onload onmousedown
+syn keyword htmlArg contained onmousemove onmouseout onmouseover onmouseup
+syn keyword htmlArg contained onreset onselect onsubmit onunload
+
+" HTML4 Attributes -- deprecated
+syn keyword htmlArg contained alink background bgcolor clear code color compact
+syn keyword htmlArg contained face hspace language link noshade nowrap object
+syn keyword htmlArg contained prompt start text version vlink vspace
+
+
+"|
+"| HTML5 Attributes
+"|------------------------------------------------------------------------------
+"| http://www.w3.org/TR/html5-diff/#new-attributes
+"|
+
 syn keyword htmlArg contained async autocomplete autofocus autoplay challenge
-syn keyword htmlArg contained command controls crossorigin default dirname
-syn keyword htmlArg contained formaction formenctype formmethod formnovalidate
-syn keyword htmlArg contained formtarget high icon keytype kind list loop max
-syn keyword htmlArg contained maxlength mediagroup min muted novalidate open
-syn keyword htmlArg contained optimum pattern placeholder poster preload
-syn keyword htmlArg contained radiogroup required reversed sandbox scoped
-syn keyword htmlArg contained seamless sizes srcdoc srclang step translate
-syn keyword htmlArg contained typemustmatch
+syn keyword htmlArg contained command contenteditable contextmenu controls
+syn keyword htmlArg contained crossorigin default dirname draggable dropzone
+syn keyword htmlArg contained form formaction formenctype formmethod
+syn keyword htmlArg contained formnovalidate formtarget hidden high icon keytype
+syn keyword htmlArg contained kind list loop manifest max maxlength mediagroup
+syn keyword htmlArg contained min muted novalidate open optimum pattern
+syn keyword htmlArg contained placeholder poster preload radiogroup required
+syn keyword htmlArg contained reversed reversed sandbox scoped seamless sizes
+syn keyword htmlArg contained spellcheck srcdoc srclang step translate
+syn keyword htmlArg contained typemustmatch wrap
 syn match   htmlArg contained "\<data-[a-z][a-z\-0-9]*\>"
+
+
+"|
+"| Microdata and RDFa Properties
+"|------------------------------------------------------------------------------
+"| http://www.w3.org/TR/microdata
+"| http://www.w3.org/TR/rdfa-syntax/#a_xhtmlrdfa_dtd
+"|
+
+syn keyword htmlArg contained itemid itemprop itemref itemscope itemtype
+syn keyword htmlArg contained about content datatype property rel resource rev
+syn keyword htmlArg contained typeof
+
 
 "|
 "| WAI-ARIA States and Properties
-"|----------------------------------------------------------------------------
+"|------------------------------------------------------------------------------
 "| http://www.w3.org/TR/wai-aria/states_and_properties
 "| http://github.com/othree/html5-syntax.vim
 "|
@@ -82,11 +103,14 @@ syn match htmlArg contained "\<aria-\(activedescendant\|posinset\|setsize\|\)\>"
 
 
 "|
-"| RDFa Properties
-"|----------------------------------------------------------------------------
-"| http://www.w3.org/TR/rdfa-syntax/#a_xhtmlrdfa_dtd
-"| http://github.com/othree/html5-syntax.vim
+"| HTML5 Tags
+"|------------------------------------------------------------------------------
+"| http://www.w3.org/TR/html5-diff/#new-elements
 "|
 
-syn keyword htmlArg contained about typeof property resource content datatype rel rev
+syn keyword htmlTagName contained article aside audio canvas command datalist
+syn keyword htmlTagName contained details embed figcaption figure footer header
+syn keyword htmlTagName contained hgroup keygen mark meter nav output progress
+syn keyword htmlTagName contained rp rt ruby section source summary time track
+syn keyword htmlTagName contained video wbr
 
