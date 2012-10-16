@@ -2,7 +2,7 @@
 " Language:    CSS3
 " Maintainer:  Arno Renevier
 " Contributor: Fabien Cazenave
-" Last Change: 2012-10-15
+" Last Change: 2012-10-16
 " Extends:     /usr/share/vim/vimcurrent/syntax/css.vim
 "              http://www.fleiner.com/vim/syntax/css.vim
 
@@ -30,7 +30,7 @@ syn match cssTextAttr contained "\<\(inter-\(word\|ideograph\|cluster\)\|distrib
 syn keyword cssTextAttr contained start end ellipsis
 
 syn match cssBoxProp contained "\<border-\(\(\(top\|right\|bottom\|left\)-\)\=radius\)\=\>"
-syn match cssBoxProp contained "\<box-sizing\>"
+syn match cssBoxProp contained "\<box-\(shadow\|sizing\)\>"
 syn match cssBoxAttr contained "\<\(border\|content\|padding\)-box\>"
 " FIXME: 'left'/'right' can't be both a property and a value...
 syn keyword cssBoxAttr contained left right
