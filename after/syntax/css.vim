@@ -2,19 +2,56 @@
 " Language:    CSS3
 " Maintainer:  Arno Renevier
 " Contributor: Fabien Cazenave
-" Last Change: 2012-10-16
-" Extends:     /usr/share/vim/vimcurrent/syntax/css.vim
+" Last Change: 2012-10-17
+" Extends:     $VIMRUNTIME/syntax/css.vim
 "              http://www.fleiner.com/vim/syntax/css.vim
 
-" HTML 5 tag names
-syn keyword cssTagName article aside audio canvas command datalist
-syn keyword cssTagName details figcaption figure footer header
-syn keyword cssTagName hgroup keygen mark meter nav output progress
-syn keyword cssTagName rp rt ruby section source summary time track
-syn keyword cssTagName video wbr
+
+"|
+"| HTML Tag Names
+"|------------------------------------------------------------------------------
+"| copied from ./html.vim
+"|
+
+syn clear cssTagName
+
+" deprecated elements
+"syn keyword cssTagName applet basefont center dir font isindex
+"syn keyword cssTagName marquee s strike u
+
+" these elements are valid in HTML4 but deprecated in HTML5
+"syn keyword cssTagName acronym big frame frameset noframes tt
+
+" HTML4: supported elements
+syn keyword cssTagName a abbr address area base bdo blockquote br button caption
+syn keyword cssTagName cite code col colgroup dd del dfn div dl dt fieldset form
+syn keyword cssTagName hr html iframe img input ins kbd label legend li link map
+syn keyword cssTagName meta noscript object ol optgroup option p param pre q
+syn keyword cssTagName samp script select small span style sub sup table tbody
+syn keyword cssTagName td textarea tfoot th thead tr ul var
+syn match cssTagName "\<\(b\|i\|h[1-6]\|em\|strong\|head\|body\|title\)\>"
+
+" HTML5: supported elements
+syn keyword cssTagName article aside audio canvas command datalist details embed
+syn keyword cssTagName figcaption figure footer header hgroup keygen mark menu
+syn keyword cssTagName meter nav output progress rp rt ruby section source
+syn keyword cssTagName summary time track video wbr
+
+
+"|
+"| CSS3 Selectors
+"|------------------------------------------------------------------------------
+"| TODO: use the list of HTML attributes for the attribute selector
+"|
 
 syn match cssSelectorOp "[~]"
 syn match cssSelectorOp2 "[*$^]"
+
+
+"|
+"| CSS3 Properties and Attributes
+"|------------------------------------------------------------------------------
+"|
 
 syn match cssValueAngle contained "[-+]\=\d\+\(\.\d*\)\=turn"
 syn match cssValueLength contained "[-+]\=\d\+\(\.\d*\)\=\(gd\|rem\|vw\|vh\|vm\|ch\)" 
@@ -74,21 +111,29 @@ syn region cssFunction contained matchgroup=cssFunctionName start="translateY(" 
 syn region cssFunction contained matchgroup=cssFunctionName start="translate(" end=")" oneline keepend
 syn region cssFunction contained matchgroup=cssFunctionName start="scale(" end=")" oneline keepend
 
-" http://www.bookofzeus.com/articles/html5-and-css3-syntax-color-in-vim/
+
+"|
+"| CSS3 Properties and Attributes
+"|------------------------------------------------------------------------------
+"| http://www.bookofzeus.com/articles/html5-and-css3-syntax-color-in-vim/
+"|
+
 syn region cssMediaType start='(' end=')' contains=css.*Attr,css.*Prop,cssComment,cssValue.*,cssColor,cssURL,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape nextgroup=cssMediaComma,cssMediaAnd,cssMediaBlock skipwhite skipnl
 syn match cssMediaAnd "and" nextgroup=cssMediaType skipwhite skipnl
 syn clear cssMediaBlock
 syn region cssMediaBlock contained transparent matchgroup=cssBraces start='{' end='}' contains=cssTagName,cssSelectorOp,cssAttributeSelector,cssIdentifier,cssError,cssDefinition,cssPseudoClass,cssComment,cssUnicodeEscape,cssClassName,cssURL
 
-if version >= 508
-  command -nargs=+ HiLink hi def link <args>
-  HiLink cssColumnProp StorageClass
-  HiLink cssTransformProp StorageClass
-  HiLink cssTransitionProp StorageClass
-  HiLink cssUIPseudoClassId PreProc
-  HiLink cssMediaAnd PreProc
-  HiLink cssTransformAttr Type
-  HiLink cssTransitionAttr Type
-  delcommand HiLink
-endif
+
+"|
+"| Highlight Rules
+"|------------------------------------------------------------------------------
+"|
+
+hi def link cssColumnProp      StorageClass
+hi def link cssTransformProp   StorageClass
+hi def link cssTransitionProp  StorageClass
+hi def link cssUIPseudoClassId PreProc
+hi def link cssMediaAnd        PreProc
+hi def link cssTransformAttr   Type
+hi def link cssTransitionAttr  Type
 

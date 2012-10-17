@@ -2,8 +2,8 @@
 " Language:    HTML5
 " Contributor: Arno Renevier
 " Contributor: Fabien Cazenave
-" Last Change: 2012-10-16
-" Extends:     /usr/share/vim/vimcurrent/syntax/html.vim
+" Last Change: 2012-10-17
+" Extends:     $VIMRUNTIME/syntax/html.vim
 "              http://www.fleiner.com/vim/syntax/html.vim
 
 
@@ -20,16 +20,18 @@ syn clear htmlTagName
 "syn keyword htmlTagName contained applet basefont center dir font isindex
 "syn keyword htmlTagName contained marquee s strike u
 
+" these elements are valid in HTML4 but deprecated in HTML5
+"syn keyword htmlTagName contained acronym big frame frameset noframes tt
+
 " HTML4: supported elements
-syn keyword htmlTagName contained a abbr acronym address area base bdo big
-syn keyword htmlTagName contained blockquote br button caption cite code col
-syn keyword htmlTagName contained colgroup dd del dfn div dl dt fieldset form
-syn keyword htmlTagName contained frame frameset hr html iframe img input ins
-syn keyword htmlTagName contained kbd label legend li link map meta noframes
+syn keyword htmlTagName contained a abbr address area base bdo blockquote br
+syn keyword htmlTagName contained button caption cite code col colgroup dd del
+syn keyword htmlTagName contained dfn div dl dt fieldset form hr html iframe img
+syn keyword htmlTagName contained input ins kbd label legend li link map meta
 syn keyword htmlTagName contained noscript object ol optgroup option p param pre
 syn keyword htmlTagName contained q samp script select small span style sub sup
-syn keyword htmlTagName contained table tbody td textarea tfoot th thead tr tt
-syn keyword htmlTagName contained ul var
+syn keyword htmlTagName contained table tbody td textarea tfoot th thead tr ul
+syn keyword htmlTagName contained var
 syn match htmlTagName contained "\<\(b\|i\|h[1-6]\|em\|strong\|head\|body\|title\)\>"
 
 " HTML5: supported elements
@@ -89,8 +91,9 @@ syn keyword htmlArg contained reversed reversed sandbox scoped seamless sizes
 syn keyword htmlArg contained spellcheck srcdoc srclang step translate
 syn keyword htmlArg contained typemustmatch wrap
 
-" note: `data' is an HTML4 attribute, `data-*' is an HTML5 attribute collection
+" `data' is an HTML4 attribute, `data-*' is an HTML5 attribute collection
 syn match htmlArg contained "\<\(data-[a-z][a-z\-0-9]*\|data\)\>"
+syn match htmlArg contained "\<xml:lang\>" "= null-namespace HTML5 attribute
 
 
 "|
