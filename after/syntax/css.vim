@@ -82,14 +82,14 @@ syn keyword cssTransitionAttr transform
 syn keyword cssTransformProp transform
 "syn keyword cssTransformAttr translateX translateY translate scale
 
-" XXX 'pointer-events' is not working because a 'pointer' rule is already defined in /usr/share/vim/vimcurrent/syntax/css.vim
+" XXX 'pointer-events' is not working because a 'pointer' rule is already defined in $VIMRUNTIME/syntax/css.vim
 "syn keyword cssUIProp contained pointer-events
 syn match cssUIProp contained "\<pointer-events\>"
 syn keyword cssUIAttr contained visiblePainted visibleFill visibleStroke visible painted fill stroke all
 
 syn match cssRenderProp contained "\<\(white-space-collapse\|list-item\|run-in\|inline-table\|word-break\|\(text\|word\)-wrap\)\>"
 syn match cssRenderAttr contained "\<table-row-group\>"
-" XXX 'pre-wrap' is not working because a 'pre' rule is already defined in /usr/share/vim/vimcurrent/syntax/css.vim
+" XXX 'pre-wrap' is not working because a 'pre' rule is already defined in $VIMRUNTIME/syntax/css.vim
 syn match cssRenderAttr contained "\<pre-wrap\|pre\|break-word\>"
 
 syn match cssPseudoClass ":\S*" contains=cssPseudoClassId,cssUIPseudoClassId,cssUnicodeEscape
