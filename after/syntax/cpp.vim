@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:    C++ (Gecko)
 " Maintainer:  Fabien Cazenave (:kaze)
-" Last Change: 2012-10-17
+" Last Change: 2012-10-18
 " Extends:     $VIMRUNTIME/syntax/cpp.vim
 
 
@@ -1068,7 +1068,7 @@ syn keyword moz_util      NS_NewISupportsArray NS_NewRunnableMethod NS_NewURI
 
 
 "|
-"| Mozilla Framework Based on Templates (MFBT) -- Macros
+"| MFBT Macros (Mozilla Framework Based on Templates)
 "|------------------------------------------------------------------------------
 "| manually extracted from src/mozilla/mfbt/
 "|
@@ -1086,7 +1086,7 @@ syn keyword moz_util      NS_NewISupportsArray NS_NewRunnableMethod NS_NewURI
 
 
 "|
-"| Mozilla Framework Based on Templates (MFBT) -- Constants
+"| MFBT Constants (Mozilla Framework Based on Templates)
 "|------------------------------------------------------------------------------
 "| manually extracted from src/mozilla/mfbt/
 "|
