@@ -12,9 +12,11 @@
 
 syn keyword moz_boolean   PR_TRUE PR_FALSE
 syn keyword moz_constant  nsnull NS_OK NS_HTML_TAG_MAX
+
 syn keyword moz_type      PRBool PRInt16 PRInt32 PRInt64 PRInt8 PROffset32
 syn keyword moz_type      PROffset64 PRPackedBool PRSize PRUint16 PRUint32
 syn keyword moz_type      PRUint64 PRUint8 PRUnichar PRUptrdiff
+
 syn keyword moz_type_ns   nsAString nsAutoPtr nsAutoString nsAutoTArray
 syn keyword moz_type_ns   nsCOMArray nsCOMPtr nsRefPtr nsTArray nsWeakPtr
 syn keyword moz_type_ns   NS_IMETHOD NS_IMETHODIMP
@@ -29,13 +31,16 @@ syn keyword moz_type_ns   nsresult
 syn keyword moz_util      address_of getter_AddRefs
 syn keyword moz_util      do_CreateInstance do_GetAtom do_GetService
 syn keyword moz_util      do_GetWeakReference do_QueryInterface do_QueryReferent
+
 syn keyword moz_assert    NS_ASSERTION NS_ENSURE_SUCCESS NS_ENSURE_TRUE
 syn keyword moz_assert    NS_ENSURE_STATE NS_ENSURE_ARG_POINTER NS_SUCCEEDED
 syn keyword moz_assert    NS_FAILED NS_NOTREACHED NS_IF_RELEASE NS_IF_ADDREF
 syn keyword moz_assert    NS_PRECONDITION
+
 syn keyword moz_util      NS_ABS NS_ADDREF NS_DEFINE_CID NS_DEFINE_NAMED_CID
 syn keyword moz_util      NS_LITERAL_STRING NS_MIN NS_NAMED_LITERAL_STRING
 syn keyword moz_util      NS_RELEASE
+
 syn keyword moz_util      NS_NewAtom NS_NewHTMLURIRefObject
 syn keyword moz_util      NS_NewISupportsArray NS_NewRunnableMethod NS_NewURI
 
@@ -102,21 +107,21 @@ syn keyword moz_util      NS_NewISupportsArray NS_NewRunnableMethod NS_NewURI
   syn keyword moz_component  nsIClipboardCommands nsIClipboardDragDropHookList nsIClipboardDragDropHooks
   syn keyword moz_component  nsIClipboardHelper nsIClipboardOwner nsICmdLineService nsICMSDecoder
   syn keyword moz_component  nsICMSEncoder nsICMSMessage nsICMSMessage2 nsICMSMessageErrors
-  syn keyword moz_component  nsICMSSecureMessage nsICODecoder nsICOEncoder MOZ_FINAL nsICollation
-  syn keyword moz_component  nsICollationFactory nsICollection nsIComboboxControlFrame nsICommandController
-  syn keyword moz_component  nsICommandHandler nsICommandHandlerInit nsICommandLine nsICommandLineHandler
-  syn keyword moz_component  nsICommandLineRunner nsICommandLineValidator nsICommandManager nsICommandParams
-  syn keyword moz_component  nsIComponentLoader nsIComponentManager nsIComponentRegistrar nsIconChannel
-  syn keyword moz_component  MOZ_FINAL nsIconDecoder nsIconProtocolHandler nsIConsoleListener
-  syn keyword moz_component  nsIConsoleMessage nsIConsoleService nsIConstraintValidation
-  syn keyword moz_component  nsIContainerBoxObject nsIContent nsIContentDispatchChooser nsIContentFilter
-  syn keyword moz_component  nsIContentFrameMessageManager nsIContentHandler nsIContentIterator
-  syn keyword moz_component  nsIContentPermissionPrompt nsIContentPermissionRequest nsIContentPolicy
-  syn keyword moz_component  nsIContentPrefCallback nsIContentPrefObserver nsIContentPrefService
-  syn keyword moz_component  nsIContentSecurityPolicy nsIContentSerializer nsIContentSink nsIContentSniffer
-  syn keyword moz_component  nsIContentURIGrouper nsIContentView nsIContentViewer nsIContentViewerContainer
-  syn keyword moz_component  nsIContentViewerEdit nsIContentViewerFile nsIContentViewManager
-  syn keyword moz_component  nsIContextMenuInfo nsIContextMenuListener nsIContextMenuListener2 nsIController
+  syn keyword moz_component  nsICMSSecureMessage nsICODecoder nsICOEncoder nsICollation nsICollationFactory
+  syn keyword moz_component  nsICollection nsIComboboxControlFrame nsICommandController nsICommandHandler
+  syn keyword moz_component  nsICommandHandlerInit nsICommandLine nsICommandLineHandler nsICommandLineRunner
+  syn keyword moz_component  nsICommandLineValidator nsICommandManager nsICommandParams nsIComponentLoader
+  syn keyword moz_component  nsIComponentManager nsIComponentRegistrar nsIconChannel nsIconDecoder
+  syn keyword moz_component  nsIconProtocolHandler nsIConsoleListener nsIConsoleMessage nsIConsoleService
+  syn keyword moz_component  nsIConstraintValidation nsIContainerBoxObject nsIContent
+  syn keyword moz_component  nsIContentDispatchChooser nsIContentFilter nsIContentFrameMessageManager
+  syn keyword moz_component  nsIContentHandler nsIContentIterator nsIContentPermissionPrompt
+  syn keyword moz_component  nsIContentPermissionRequest nsIContentPolicy nsIContentPrefCallback
+  syn keyword moz_component  nsIContentPrefObserver nsIContentPrefService nsIContentSecurityPolicy
+  syn keyword moz_component  nsIContentSerializer nsIContentSink nsIContentSniffer nsIContentURIGrouper
+  syn keyword moz_component  nsIContentView nsIContentViewer nsIContentViewerContainer nsIContentViewerEdit
+  syn keyword moz_component  nsIContentViewerFile nsIContentViewManager nsIContextMenuInfo
+  syn keyword moz_component  nsIContextMenuListener nsIContextMenuListener2 nsIController
   syn keyword moz_component  nsIControllerCommand nsIControllerCommandGroup nsIControllerCommandTable
   syn keyword moz_component  nsIControllerContext nsIControllers nsIConverterInputStream
   syn keyword moz_component  nsIConverterOutputStream nsICookie nsICookie2 nsICookieAcceptDialog
@@ -211,43 +216,41 @@ syn keyword moz_util      NS_NewISupportsArray NS_NewRunnableMethod NS_NewURI
   syn keyword moz_component  nsILoginMetaInfo nsIMacDockSupport nsIMacShellService nsIMacUtils
   syn keyword moz_component  nsIMacWebAppUtils nsImageBoxFrame nsImageBoxListener nsImageFrame
   syn keyword moz_component  nsImageFromClipboard nsImageListener nsImageLoadingContent nsImageMap
-  syn keyword moz_component  nsImageRenderer nsImageToClipboard nsImageToPixbuf MOZ_FINAL
-  syn keyword moz_component  nsIMarkupDocumentViewer nsIMathMLFrame nsIMEContext nsIMediaDevice
-  syn keyword moz_component  nsIMediaStreamOptions nsIMemory nsIMemoryMultiReporter
-  syn keyword moz_component  nsIMemoryMultiReporterCallback nsIMemoryReporter nsIMemoryReporterManager
-  syn keyword moz_component  nsIMenuBoxObject nsIMenuBuilder nsIMenuItem nsIMEPicker nsIMessageBroadcaster
-  syn keyword moz_component  nsIMessageListener nsIMessageListenerManager nsIMessageSender nsIMEStateManager
-  syn keyword moz_component  nsIMIMEHeaderParam nsIMIMEInfo nsIMIMEInputStream nsIMIMEService nsIMM32Handler
-  syn keyword moz_component  nsIMmsService nsIMobileConnectionProvider nsIModule nsIMozBrowserFrame
-  syn keyword moz_component  nsIMozIconURI nsIMozNavigatorMobileConnection nsIMultiPartChannel
-  syn keyword moz_component  nsIMultiplexInputStream nsIMutable nsIMutableArray nsIMutationObserver
-  syn keyword moz_component  nsIMutationObserverCallback nsINameSpaceManager nsINativeAppSupport
-  syn keyword moz_component  nsINativeKeyBindings nsINativeMenuService nsINativeTreeSelection
-  syn keyword moz_component  nsINativeTreeView nsINavBookmarkObserver nsINavBookmarksService
-  syn keyword moz_component  nsINavHistoryBatchCallback nsINavHistoryContainerResultNode
-  syn keyword moz_component  nsINavHistoryFullVisitResultNode nsINavHistoryObserver nsINavHistoryQuery
-  syn keyword moz_component  nsINavHistoryQueryOptions nsINavHistoryQueryResultNode nsINavHistoryResult
-  syn keyword moz_component  nsINavHistoryResultNode nsINavHistoryResultObserver
-  syn keyword moz_component  nsINavHistoryResultTreeViewer nsINavHistoryService nsINavHistoryVisitResultNode
-  syn keyword moz_component  nsINavigatorBattery nsINavigatorUserMedia nsIndexedToHTML nsINestedURI
-  syn keyword moz_component  nsINetAddr nsINetUtil nsINetworkInterface nsINetworkLinkService
-  syn keyword moz_component  nsINetworkManager nsINetworkStatsCallback nsINIParserFactory MOZ_FINAL
-  syn keyword moz_component  nsInitialStyleRule MOZ_FINAL nsInlineEventHandlersTearoff
-  syn keyword moz_component  nsInlineEventHandlersTearoff MOZ_FINAL nsInlineFrame nsINode nsINodeInfo
-  syn keyword moz_component  nsINodeList nsInProcessTabChildGlobal nsInputEvent nsInputStreamChannel
-  syn keyword moz_component  nsInputStreamPump MOZ_FINAL nsInsertTagCommand nsINSSCertCache nsINSSComponent
-  syn keyword moz_component  nsINSSErrorsService nsINSSVersion nsInstantiationNode nsInt2StrHashtable
-  syn keyword moz_component  nsInterfaceHashtable nsInterfaceHashtableMT nsInternetCiter nsIntervalSet
-  syn keyword moz_component  nsIntRegion nsIntSize nsInvalidateRequestList nsInvalidPluginTag nsIObjectFrame
-  syn keyword moz_component  nsIObjectInputStream nsIObjectLoadingContent nsIObjectOutputStream nsIObserver
-  syn keyword moz_component  nsIObserverService nsIOCSPResponder nsIOfflineCacheUpdate
-  syn keyword moz_component  nsIOfflineCacheUpdateObserver nsIOfflineCacheUpdateService
-  syn keyword moz_component  nsIOpenWindowEventDetail nsIOS2Locale nsIOService MOZ_FINAL
-  syn keyword moz_component  nsIOSFileConstantsService nsIOSurface nsIOUtil MOZ_FINAL nsIOutputIterator
-  syn keyword moz_component  nsIOutputStream nsIOutputStreamCallback nsIPageSequenceFrame
-  syn keyword moz_component  nsIParanoidFragmentContentSink nsIParentalControlsService nsIParentChannel
-  syn keyword moz_component  nsIParentRedirectingChannel nsIParser nsIParserNode nsIParserService
-  syn keyword moz_component  nsIParserUtils nsIPartialFileInputStream nsIPaymentFlowInfo nsIPaymentUIGlue
+  syn keyword moz_component  nsImageRenderer nsImageToClipboard nsImageToPixbuf nsIMarkupDocumentViewer
+  syn keyword moz_component  nsIMathMLFrame nsIMEContext nsIMediaDevice nsIMediaStreamOptions nsIMemory
+  syn keyword moz_component  nsIMemoryMultiReporter nsIMemoryMultiReporterCallback nsIMemoryReporter
+  syn keyword moz_component  nsIMemoryReporterManager nsIMenuBoxObject nsIMenuBuilder nsIMenuItem nsIMEPicker
+  syn keyword moz_component  nsIMessageBroadcaster nsIMessageListener nsIMessageListenerManager
+  syn keyword moz_component  nsIMessageSender nsIMEStateManager nsIMIMEHeaderParam nsIMIMEInfo
+  syn keyword moz_component  nsIMIMEInputStream nsIMIMEService nsIMM32Handler nsIMmsService
+  syn keyword moz_component  nsIMobileConnectionProvider nsIModule nsIMozBrowserFrame nsIMozIconURI
+  syn keyword moz_component  nsIMozNavigatorMobileConnection nsIMultiPartChannel nsIMultiplexInputStream
+  syn keyword moz_component  nsIMutable nsIMutableArray nsIMutationObserver nsIMutationObserverCallback
+  syn keyword moz_component  nsINameSpaceManager nsINativeAppSupport nsINativeKeyBindings
+  syn keyword moz_component  nsINativeMenuService nsINativeTreeSelection nsINativeTreeView
+  syn keyword moz_component  nsINavBookmarkObserver nsINavBookmarksService nsINavHistoryBatchCallback
+  syn keyword moz_component  nsINavHistoryContainerResultNode nsINavHistoryFullVisitResultNode
+  syn keyword moz_component  nsINavHistoryObserver nsINavHistoryQuery nsINavHistoryQueryOptions
+  syn keyword moz_component  nsINavHistoryQueryResultNode nsINavHistoryResult nsINavHistoryResultNode
+  syn keyword moz_component  nsINavHistoryResultObserver nsINavHistoryResultTreeViewer nsINavHistoryService
+  syn keyword moz_component  nsINavHistoryVisitResultNode nsINavigatorBattery nsINavigatorUserMedia
+  syn keyword moz_component  nsIndexedToHTML nsINestedURI nsINetAddr nsINetUtil nsINetworkInterface
+  syn keyword moz_component  nsINetworkLinkService nsINetworkManager nsINetworkStatsCallback
+  syn keyword moz_component  nsINIParserFactory nsInitialStyleRule nsInlineEventHandlersTearoff
+  syn keyword moz_component  nsInlineEventHandlersTearoff nsInlineFrame nsINode nsINodeInfo nsINodeList
+  syn keyword moz_component  nsInProcessTabChildGlobal nsInputEvent nsInputStreamChannel nsInputStreamPump
+  syn keyword moz_component  nsInsertTagCommand nsINSSCertCache nsINSSComponent nsINSSErrorsService
+  syn keyword moz_component  nsINSSVersion nsInstantiationNode nsInt2StrHashtable nsInterfaceHashtable
+  syn keyword moz_component  nsInterfaceHashtableMT nsInternetCiter nsIntervalSet nsIntRegion nsIntSize
+  syn keyword moz_component  nsInvalidateRequestList nsInvalidPluginTag nsIObjectFrame nsIObjectInputStream
+  syn keyword moz_component  nsIObjectLoadingContent nsIObjectOutputStream nsIObserver nsIObserverService
+  syn keyword moz_component  nsIOCSPResponder nsIOfflineCacheUpdate nsIOfflineCacheUpdateObserver
+  syn keyword moz_component  nsIOfflineCacheUpdateService nsIOpenWindowEventDetail nsIOS2Locale nsIOService
+  syn keyword moz_component  nsIOSFileConstantsService nsIOSurface nsIOUtil nsIOutputIterator nsIOutputStream
+  syn keyword moz_component  nsIOutputStreamCallback nsIPageSequenceFrame nsIParanoidFragmentContentSink
+  syn keyword moz_component  nsIParentalControlsService nsIParentChannel nsIParentRedirectingChannel
+  syn keyword moz_component  nsIParser nsIParserNode nsIParserService nsIParserUtils
+  syn keyword moz_component  nsIPartialFileInputStream nsIPaymentFlowInfo nsIPaymentUIGlue
   syn keyword moz_component  nsIPaymentUIGlueCallback nsIPercentHeightObserver nsIPermission
   syn keyword moz_component  nsIPermissionChecker nsIPermissionManager nsIPersistentProperties nsIPhonetic
   syn keyword moz_component  nsIPipe nsIPK11Token nsIPK11TokenDB nsIPKCS11 nsIPKCS11Module nsIPKCS11ModuleDB
@@ -1065,6 +1068,45 @@ syn keyword moz_util      NS_NewISupportsArray NS_NewRunnableMethod NS_NewURI
 
 
 "|
+"| Mozilla Framework Based on Templates (MFBT) -- Macros
+"|------------------------------------------------------------------------------
+"| manually extracted from src/mozilla/mfbt/
+"|
+
+  syn keyword moz_util  MOZ_ALIGNED_DECL MOZ_ALIGNOF MOZ_ALWAYS_FALSE MOZ_ALWAYS_TRUE MOZ_ASSERT
+  syn keyword moz_util  MOZ_ASSERT_GLUE MOZ_ASSERT_IF MOZ_BEGIN_ENUM_CLASS
+  syn keyword moz_util  MOZ_CHECKEDINT_BASIC_BINARY_OPERATOR MOZ_CHECKEDINT_CONVENIENCE_BINARY_OPERATORS
+  syn keyword moz_util  MOZ_COUNT_ASSERT_ARGS MOZ_COUNT_ASSERT_ARGS_IMPL MOZ_CRASH MOZ_DOUBLE_EXPONENT
+  syn keyword moz_util  MOZ_DOUBLE_IS_FINITE MOZ_DOUBLE_IS_INFINITE MOZ_DOUBLE_IS_NEGATIVE
+  syn keyword moz_util  MOZ_DOUBLE_IS_NEGATIVE_ZERO MOZ_DOUBLE_MIN_VALUE MOZ_DOUBLE_NEGATIVE_INFINITY
+  syn keyword moz_util  MOZ_DOUBLE_POSITIVE_INFINITY MOZ_END_ENUM_CLASS MOZ_ENUM_TYPE MOZ_EXPORT_API
+  syn keyword moz_util  MOZ_EXPORT_DATA MOZ_IMPORT_API MOZ_IMPORT_DATA MOZ_LIKELY MOZ_NOT_REACHED
+  syn keyword moz_util  MOZ_NOT_REACHED_MARKER MOZ_STATIC_ASSERT MOZ_STATIC_ASSERT_GLUE
+  syn keyword moz_util  MOZ_TYPE_SPECIFIC_SCOPED_POINTER_TEMPLATE MOZ_UNLIKELY
+
+
+"|
+"| Mozilla Framework Based on Templates (MFBT) -- Constants
+"|------------------------------------------------------------------------------
+"| manually extracted from src/mozilla/mfbt/
+"|
+
+  syn keyword moz_mfbt  MOZ_ALWAYS_INLINE MOZ_ASAN_BLACKLIST MOZ_ASSERT_CHOOSE_HELPER MOZ_ASSERT_HELPER
+  syn keyword moz_mfbt  MOZ_ASSERTS MOZ_BEGIN_EXTERN_C MOZ_CUSTOM_STDINT_H
+  syn keyword moz_mfbt  MOZ_DECL_USE_GUARD_OBJECT_NOTIFIER MOZ_DELETE MOZ_DOUBLE_EXPONENT_BIAS
+  syn keyword moz_mfbt  MOZ_DOUBLE_EXPONENT_BITS MOZ_DOUBLE_EXPONENT_SHIFT MOZ_DOUBLE_IS_INT
+  syn keyword moz_mfbt  MOZ_DOUBLE_IS_N MOZ_DOUBLE_N MOZ_DOUBLE_SIGN_BIT MOZ_DOUBLE_SIGNIFICAND_BITS
+  syn keyword moz_mfbt  MOZ_DOUBLE_SPECIFIC_N MOZ_END_EXTERN_C MOZ_EXTERNAL_VIS MOZ_FINAL
+  syn keyword moz_mfbt  MOZ_GLUE_LDFLAGS MOZ_GLUE_PROGRAM_LDFLAGS MOZ_GUARD_OBJECT_NOTIFIER_INIT
+  syn keyword moz_mfbt  MOZ_GUARD_OBJECT_NOTIFIER_ONLY_PARAM
+  syn keyword moz_mfbt  MOZ_GUARD_OBJECT_NOTIFIER_ONLY_PARAM_TO_PARENT MOZ_GUARD_OBJECT_NOTIFIER_PARAM
+  syn keyword moz_mfbt  MOZ_GUARD_OBJECT_NOTIFIER_PARAM_IN_IMPL
+  syn keyword moz_mfbt  MOZ_GUARD_OBJECT_NOTIFIER_PARAM_TO_PARENT MOZ_HAVE_CXX MOZ_HAVE_NEVER_INLINE
+  syn keyword moz_mfbt  MOZ_HAVE_NORETURN MOZ_INLINE MOZ_IS_LITTLE_ENDIAN MOZ_LIKELY MOZ_NEVER_INLINE
+  syn keyword moz_mfbt  MOZ_NORETURN MOZ_OVERRIDE MOZ_WARN_UNUSED_RESULT
+
+
+"|
 "| Highlight Rules
 "|------------------------------------------------------------------------------
 "|
@@ -1080,4 +1122,5 @@ hi def link moz_constant   Constant
 hi def link moz_error      Constant
 hi def link moz_impl       Constant
 hi def link moz_interface  Constant
+hi def link moz_mfbt       Constant
 
