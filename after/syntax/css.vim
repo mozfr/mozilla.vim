@@ -2,7 +2,7 @@
 " Language:    CSS3
 " Maintainer:  Arno Renevier
 " Contributor: Fabien Cazenave
-" Last Change: 2012-10-17
+" Last Change: 2012-10-18
 " Extends:     $VIMRUNTIME/syntax/css.vim
 "              http://www.fleiner.com/vim/syntax/css.vim
 
@@ -97,23 +97,19 @@ syn match cssPseudoClass ":[A-Za-z0-9_-]*" contains=cssPseudoClassId,cssUIPseudo
 syn keyword cssPseudoClassId contained target checked
 syn match cssPseudoClassId contained "\<\(last\|only\)\(-\(child\|of-type\)\)\=\>"
 syn region cssPseudoClassId start="\<nth-\(last-\)\=\(child\|of-type\)\>(" end=")" oneline
-syn region cssPseudoClassNot matchgroup=cssPseudoClassId start=":not(" end=")" oneline
+syn region cssPseudoClassNot matchgroup=cssPseudoClassId start=":not(" end=")" oneline contains=cssPseudoClass,cssClassName,cssIdentifier
 
 syn keyword cssUIPseudoClassId default valid invalid required optional read-only read-write \:value :choices :repeat-item :repeat-index
 syn match cssUIPseudoClassId "\<\(in\|out-of\)-range\>"
 syn match cssUIPseudoClassId "\<read-\(only\|write\)\>"
-syn match cssUIPseudoClassId "\:\(value\|choices\|repeat-\(item\|index\)\)\>"
+syn match cssUIPseudoClassId "\:\(value\|choices\|repeat-\(item\|index\)\|empty\)\>"
 
-syn region cssFunction contained matchgroup=cssFunctionName start="calc(" end=")" oneline keepend
-syn region cssFunction contained matchgroup=cssFunctionName start="rgba(" end=")" oneline keepend
-syn region cssFunction contained matchgroup=cssFunctionName start="translateX(" end=")" oneline keepend
-syn region cssFunction contained matchgroup=cssFunctionName start="translateY(" end=")" oneline keepend
-syn region cssFunction contained matchgroup=cssFunctionName start="translate(" end=")" oneline keepend
-syn region cssFunction contained matchgroup=cssFunctionName start="scale(" end=")" oneline keepend
+" CSS Function: extend rgb|clip|attr|counter|rect
+syn region cssFunction contained matchgroup=cssFunctionName start="\<\(calc\|rgba\|scale\|translate\([XY]\?\)\)\s*(" end=")" oneline keepend
 
 
 "|
-"| CSS3 Properties and Attributes
+"| Media Queries
 "|------------------------------------------------------------------------------
 "| http://www.bookofzeus.com/articles/html5-and-css3-syntax-color-in-vim/
 "|
