@@ -61,14 +61,15 @@ syn keyword htmlArg contained abbr accesskey action align alt archive axis
 syn keyword htmlArg contained border cellpadding cellspacing char charoff
 syn keyword htmlArg contained charset checked cite class classid codebase
 syn keyword htmlArg contained codetype cols colspan content coords datetime
-syn keyword htmlArg contained declare defer dir disabled enctype for frame
-syn keyword htmlArg contained frameborder headers height href hreflang id ismap
-syn keyword htmlArg contained label lang longdesc marginheight marginwidth
-syn keyword htmlArg contained maxlength media method multiple name nohref
-syn keyword htmlArg contained noresize profile readonly rel rev rows rowspan
-syn keyword htmlArg contained rules scheme scope scrolling selected shape size
-syn keyword htmlArg contained span src standby style summary tabindex target
-syn keyword htmlArg contained title type usemap valign value valuetype width
+syn keyword htmlArg contained declare defer dir disabled download enctype for
+syn keyword htmlArg contained frame frameborder headers height href hreflang
+syn keyword htmlArg contained id ismap label lang longdesc marginheight
+syn keyword htmlArg contained marginwidth maxlength media method multiple name
+syn keyword htmlArg contained nohref noresize profile readonly rel rev rows
+syn keyword htmlArg contained rowspan rules scheme scope scrolling selected
+syn keyword htmlArg contained shape size span src standby style summary
+syn keyword htmlArg contained tabindex target title type usemap valign value
+syn keyword htmlArg contained valuetype width
 syn match htmlArg contained "<\accept-charset\|accept\>"
 syn match htmlArg contained "\<\(http-equiv\|href\|title\)="me=e-1
 
