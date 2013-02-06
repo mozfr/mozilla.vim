@@ -1,3 +1,29 @@
+2013-02-06
+----------
+...
+  garcimore | hey le tupper vim c'est demain \o/
+ fuckDuckGo | yesssss :)
+ fuckDuckGo | 12ème édition
+ fuckDuckGo | (pour la version parigotte)
+ fuckDuckGo | et à partir de la 13ème, ça deviendra un événement Mozilla « officiel » (= référencé pour Mozilla Reps)
+Anarchicken | ouille, ça veut dire que ça va devenir politiquement correct ?
+ fuckDuckGo | moi vivant, certainement pas
+ fuckDuckGo | si vous en doutez, amenez-moi un canard !
+  garcimore | en plastique ?
+   wise_guy | kaze: d'où vient cette limite à 13 ? C'est arbitraire ?
+   wise_guy | kaze: du coup, ça fait 15 éditions en tout ?
+ fuckDuckGo | quelle limite à 13 ?
+    albinOS | en fait ça fait un an
+ fuckDuckGo | ah
+    albinOS | vous avez pas peur que ça s'essoufle ?
+    albinOS | certes y'a beaucoup de choses à dire sur vim
+    albinOS | mais bon...
+   wise_guy | albinOS: il n'y a jamais autant eu d'inscrits.
+    albinOS | un jour on va tourner en rond
+    albinOS | wise_guy: pas sur le nombre de gens mais sur le contenu
+   wise_guy | albinOS: vim, c’est comme le cul de Zahia. On peut toujours aller plus profond.
+...
+
 2012-10-14
 ----------
 ```
