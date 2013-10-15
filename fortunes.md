@@ -2,12 +2,12 @@
 ----------
 
 ```
-fuckDuckGo  | Smarty: à part peut-être le champ de recherche (cf. article ALA qui
+fuckDuckGo  | DualCore: à part peut-être le champ de recherche (cf. article ALA qui
             | explique vraiment bien pourquoi il ne faut pas les faire comme ça),
             | je trouve que le contraste est largement suffisant
-Smarty      | fuckDuckGo: les normes ne sont pas de ton avis, mais je pense que
+DualCore    | fuckDuckGo: les normes ne sont pas de ton avis, mais je pense que
             | juste agrandir un peu la police devrait être suffisant
-fuckDuckGo  | Smarty: quand des normes disent de la merde ou sont inapplicables,
+fuckDuckGo  | DualCore: quand des normes disent de la merde ou sont inapplicables,
             | faut pas trop s’étonner si les gens bien se torchent avec :-)
 fuckDuckGo  | s’il y a une norme là qui dit que bleu sur gris très clair c’est pas
             | assez contrasté, c’est une norme de merde
@@ -17,8 +17,8 @@ fuckDuckGo  | en fait sans redshift c’est vrai que le bleu est un poil trop cl
 fuckDuckGo  | il devient moins lisible que le texte normal, ce qui est idiot (y
             | compris pour des gens qui y voient bien)
 fuckDuckGo  | les liens doivent être au moins aussi lisibles que le texte, c’est un fait
-Smarty      | je rêve ou tu es d'accord avec moi ?
-fuckDuckGo  | Smarty: ça me fait mal, t’as pas idée
+DualCore    | je rêve ou tu es d'accord avec moi ?
+fuckDuckGo  | DualCore: ça me fait mal, t’as pas idée
 ```
 
 2013-02-06
