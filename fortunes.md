@@ -49,7 +49,7 @@ Anarchicken | ouille, ça veut dire que ça va devenir politiquement correct ?
    wise_guy | albinOS: vim, c’est comme le cul de Zahia. On peut toujours aller plus profond.
 ```
 
-2012-10-14
+2012-10-04
 ----------
 ```
     Smarty | goofy: il manque un champ alt à ton image :)
