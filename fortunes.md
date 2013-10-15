@@ -1,6 +1,6 @@
 2013-02-06
 ----------
-...
+```
   garcimore | hey le tupper vim c'est demain \o/
  fuckDuckGo | yesssss :)
  fuckDuckGo | 12ème édition
@@ -10,8 +10,8 @@ Anarchicken | ouille, ça veut dire que ça va devenir politiquement correct ?
  fuckDuckGo | moi vivant, certainement pas
  fuckDuckGo | si vous en doutez, amenez-moi un canard !
   garcimore | en plastique ?
-   wise_guy | kaze: d'où vient cette limite à 13 ? C'est arbitraire ?
-   wise_guy | kaze: du coup, ça fait 15 éditions en tout ?
+   wise_guy | fuckDuckGo: d'où vient cette limite à 13 ? C'est arbitraire ?
+   wise_guy | fuckDuckGo: du coup, ça fait 15 éditions en tout ?
  fuckDuckGo | quelle limite à 13 ?
     albinOS | en fait ça fait un an
  fuckDuckGo | ah
@@ -22,7 +22,7 @@ Anarchicken | ouille, ça veut dire que ça va devenir politiquement correct ?
     albinOS | un jour on va tourner en rond
     albinOS | wise_guy: pas sur le nombre de gens mais sur le contenu
    wise_guy | albinOS: vim, c’est comme le cul de Zahia. On peut toujours aller plus profond.
-...
+```
 
 2012-10-14
 ----------
