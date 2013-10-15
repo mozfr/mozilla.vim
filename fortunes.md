@@ -1,11 +1,36 @@
+2013-10-15
+----------
+
+```
+fuckDuckGo  | Smarty: à part peut-être le champ de recherche (cf. article ALA qui
+            | explique vraiment bien pourquoi il ne faut pas les faire comme ça),
+            | je trouve que le contraste est largement suffisant
+Smarty      | fuckDuckGo: les normes ne sont pas de ton avis, mais je pense que
+            | juste agrandir un peu la police devrait être suffisant
+fuckDuckGo  | Smarty: quand des normes disent de la merde ou sont inapplicables,
+            | faut pas trop s’étonner si les gens bien se torchent avec :-)
+fuckDuckGo  | s’il y a une norme là qui dit que bleu sur gris très clair c’est pas
+            | assez contrasté, c’est une norme de merde
+fuckDuckGo  | là en plus je visualise le truc avec redshift (donc contraste encore diminué)
+fuckDuckGo  | euh…
+fuckDuckGo  | en fait sans redshift c’est vrai que le bleu est un poil trop clair
+fuckDuckGo  | il devient moins lisible que le texte normal, ce qui est idiot (y
+            | compris pour des gens qui y voient bien)
+fuckDuckGo  | les liens doivent être au moins aussi lisibles que le texte, c’est un fait
+Smarty      | je rêve ou tu es d'accord avec moi ?
+fuckDuckGo  | Smarty: ça me fait mal, t’as pas idée
+```
+
 2013-02-06
 ----------
+
 ```
   garcimore | hey le tupper vim c'est demain \o/
  fuckDuckGo | yesssss :)
  fuckDuckGo | 12ème édition
  fuckDuckGo | (pour la version parigotte)
- fuckDuckGo | et à partir de la 13ème, ça deviendra un événement Mozilla « officiel » (= référencé pour Mozilla Reps)
+ fuckDuckGo | et à partir de la 13ème, ça deviendra un événement Mozilla « officiel »
+            | (= référencé pour Mozilla Reps)
 Anarchicken | ouille, ça veut dire que ça va devenir politiquement correct ?
  fuckDuckGo | moi vivant, certainement pas
  fuckDuckGo | si vous en doutez, amenez-moi un canard !
