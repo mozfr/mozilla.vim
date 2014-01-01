@@ -3,14 +3,14 @@
 
 ```
 fuckDuckGo  | ^(?!(x(xx)+)\1*$)
-fuckDuckGo  | ce mec est un génie !
+fuckDuckGo  | ce mec est un génie !
 fuckDuckGo  | rien compris à sa regexp, c’est qu’elle doit être trop classe
 fuckDuckGo  | déjà, y’a du lookahead dedans
-  wise_guy  | fuckDuckGo: le lookahead sert à faire une négation.
-  wise_guy  | Le lookahead sur tout = ^ (début) pas suivi de = impossible.
-fuckDuckGo  | wise_guy: ouais j’avais vaguement compris l’idée
+  wise_man  | fuckDuckGo: le lookahead sert à faire une négation.
+  wise_man  | Le lookahead sur tout = ^ (début) pas suivi de = impossible.
+fuckDuckGo  | wise_man: ouais j’avais vaguement compris l’idée
 fuckDuckGo  | mais ça reste un chouille trop abstrait quand même
-  dualCore  | wise_guy: explique-lui avec des filles et de la drogue, pour qu’il comprenne
+  dualCore  | wise_man: explique-lui avec des filles et de la drogue, pour qu’il comprenne
 ```
 
 2013-12-26
@@ -19,8 +19,8 @@ fuckDuckGo  | mais ça reste un chouille trop abstrait quand même
 ```
 fatBoySlim  | merci papa Noël fuckDuckGo :)
 fuckDuckGo  | :)
-  dualCore  | fatBoySlim: tu as eu quoi par papa noël ?
-fatBoySlim  | dualCore : un vrai clavier qui supporte lafayette
+  dualCore  | fatBoySlim: tu as eu quoi par papa noël ?
+fatBoySlim  | dualCore : un vrai clavier qui supporte lafayette
 taratatach  | fatBoySlim: il suffit pas d'avoir un qwerty pour ça ?
 fatBoySlim  | nan
 fatBoySlim  | enfin si, mais, là c'est encore plus mieux ^^
@@ -36,7 +36,7 @@ fatBoySlim  | cela dit, j'avais demandé une jeune fille à forte poitrine au p�
 fuckDuckGo  | DualCore: à part peut-être le champ de recherche (cf. article ALA qui
             | explique vraiment bien pourquoi il ne faut pas les faire comme ça),
             | je trouve que le contraste est largement suffisant
-DualCore    | fuckDuckGo: les normes ne sont pas de ton avis, mais je pense que
+  DualCore  | fuckDuckGo: les normes ne sont pas de ton avis, mais je pense que
             | juste agrandir un peu la police devrait être suffisant
 fuckDuckGo  | DualCore: quand des normes disent de la merde ou sont inapplicables,
             | faut pas trop s’étonner si les gens bien se torchent avec :-)
@@ -48,7 +48,7 @@ fuckDuckGo  | en fait sans redshift c’est vrai que le bleu est un poil trop cl
 fuckDuckGo  | il devient moins lisible que le texte normal, ce qui est idiot (y
             | compris pour des gens qui y voient bien)
 fuckDuckGo  | les liens doivent être au moins aussi lisibles que le texte, c’est un fait
-DualCore    | je rêve ou tu es d'accord avec moi ?
+  DualCore  | je rêve ou tu es d'accord avec moi ?
 fuckDuckGo  | DualCore: ça me fait mal, t’as pas idée
 ```
 
@@ -66,18 +66,18 @@ Anarchicken | ouille, ça veut dire que ça va devenir politiquement correct ?
  fuckDuckGo | moi vivant, certainement pas
  fuckDuckGo | si vous en doutez, amenez-moi un canard !
   garcimore | en plastique ?
-   wise_guy | fuckDuckGo: d'où vient cette limite à 13 ? C'est arbitraire ?
-   wise_guy | fuckDuckGo: du coup, ça fait 15 éditions en tout ?
+   wise_man | fuckDuckGo: d'où vient cette limite à 13 ? C'est arbitraire ?
+   wise_man | fuckDuckGo: du coup, ça fait 15 éditions en tout ?
  fuckDuckGo | quelle limite à 13 ?
     albinOS | en fait ça fait un an
  fuckDuckGo | ah
     albinOS | vous avez pas peur que ça s'essoufle ?
     albinOS | certes y'a beaucoup de choses à dire sur vim
     albinOS | mais bon...
-   wise_guy | albinOS: il n'y a jamais autant eu d'inscrits.
+   wise_man | albinOS: il n'y a jamais autant eu d'inscrits.
     albinOS | un jour on va tourner en rond
-    albinOS | wise_guy: pas sur le nombre de gens mais sur le contenu
-   wise_guy | albinOS: vim, c’est comme le cul de Zahia. On peut toujours aller plus profond.
+    albinOS | wise_man: pas sur le nombre de gens mais sur le contenu
+   wise_man | albinOS: vim, c’est comme le cul de Zahia. On peut toujours aller plus profond.
 ```
 
 2012-10-04
@@ -100,7 +100,7 @@ fuckDuckGo | autant dire, on ne craint personne
 ----------
 ```
       n3rd | moi j'ai trouvé l'astuce: quand mon site est tombé en panne, je l'ai réparé 2 mois après
-FuckDuckGo | moi j’ai attendu que les gens passent à un navigateur qui supportait mon site
+fuckDuckGo | moi j’ai attendu que les gens passent à un navigateur qui supportait mon site
       n3rd | et plus personne me demande quoi que soit
       n3rd | pour plus de sécurité, j'ai désactivé le smtp, comme ça, même si y'en a qui veulent
            | utiliser le formulaire de contact, je suis pas dérangé.
@@ -125,12 +125,12 @@ fatBoySlim | ils le seront tôt ou tard, autant leur apprendre le plus tôt poss
 2012-07-17
 ----------
 ```
-FuckDuckGo | « change ce que peux, accepte ce que dois, et prie pour faire la différence »
+fuckDuckGo | « change ce que peux, accepte ce que dois, et prie pour faire la différence »
   OldTimer | t'es croyant toi ? :)
-FuckDuckGo | perso ma devise c’est « si ça ne se mange pas et si ça ne se baise pas, pisse dessus »
-FuckDuckGo | un truc que mon chien m’a enseigné
+fuckDuckGo | perso ma devise c’est « si ça ne se mange pas et si ça ne se baise pas, pisse dessus »
+fuckDuckGo | un truc que mon chien m’a enseigné
   OldTimer | arf :)
-FuckDuckGo | ça fonctionne pour tout
+fuckDuckGo | ça fonctionne pour tout
 ```
 
 2012-07-13
@@ -147,4 +147,3 @@ Anarchicken | c'est du racisme anti-français !
 Anarchicken | euh…
        n3rd | ma copine l'a raté pour un motif plus futile: elle a juste pas regardé l'angle mort
 ```
-
