@@ -1,3 +1,19 @@
+2013-12-26
+----------
+
+```
+fatBoySlim  | merci papa Noël fuckDuckGo :)
+fuckDuckGo  | :)
+  dualCore  | fatBoySlim: tu as eu quoi par papa noël ?
+fatBoySlim  | dualCore : un vrai clavier qui supporte lafayette
+taratatach  | fatBoySlim: il suffit pas d'avoir un qwerty pour ça ?
+fatBoySlim  | nan
+fatBoySlim  | enfin si, mais, là c'est encore plus mieux ^^
+  dualCore  | j’en connais un qui doit plus dormir tellement il est content
+fatBoySlim  | cela dit, j'avais demandé une jeune fille à forte poitrine au père Noël
+            | et il s'est encore trompé, comme d'habitude
+```
+
 2013-10-15
 ----------
 
