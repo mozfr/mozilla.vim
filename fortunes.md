@@ -1,3 +1,18 @@
+2013-12-29
+----------
+
+```
+fuckDuckGo  | ^(?!(x(xx)+)\1*$)
+fuckDuckGo  | ce mec est un génie !
+fuckDuckGo  | rien compris à sa regexp, c’est qu’elle doit être trop classe
+fuckDuckGo  | déjà, y’a du lookahead dedans
+  wise_guy  | fuckDuckGo: le lookahead sert à faire une négation.
+  wise_guy  | Le lookahead sur tout = ^ (début) pas suivi de = impossible.
+fuckDuckGo  | wise_guy: ouais j’avais vaguement compris l’idée
+fuckDuckGo  | mais ça reste un chouille trop abstrait quand même
+  dualCore  | wise_guy: explique-lui avec des filles et de la drogue, pour qu’il comprenne
+```
+
 2013-12-26
 ----------
 
